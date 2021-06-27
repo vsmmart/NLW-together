@@ -72,7 +72,11 @@ class _HomePageState extends State<HomePage> {
                 color: AppColors.primary, 
                 borderRadius: BorderRadius.circular(5)),
               child:   IconButton(
-                onPressed: () {print("clicou");},
+                onPressed: () {
+                 // Navigator.pushReplacementNamed(context, "/barcode_scanner");
+                  Navigator.pushNamed(context, "/insert_boleto");
+
+                },
                 icon: Icon(
                   Icons.add_box_outlined,
                   color: AppColors.background,
